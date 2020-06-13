@@ -16,7 +16,7 @@ function useIntersectionObserver(target, options) {
         observer.unobserve(target.current);
       };
     },
-    []
+    [options, target]
   );
 
   return entries;
